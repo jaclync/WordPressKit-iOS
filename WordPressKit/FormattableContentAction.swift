@@ -59,11 +59,13 @@ public struct ActionContext {
     public let block: ActionableObject
     public let content: String
     public let completion: ActionContextRequest?
+    public let uiProcess: ContentActionUIComponent?
 
-    public init(block: ActionableObject, content: String = "", completion: ActionContextRequest? = nil) {
+    public init(block: ActionableObject, content: String = "", completion: ActionContextRequest? = nil, uiProcess: ContentActionUIComponent? = nil) {
         self.block = block
         self.content = content
         self.completion = completion
+        self.uiProcess = uiProcess
     }
 }
 
