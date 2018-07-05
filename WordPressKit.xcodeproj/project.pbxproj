@@ -388,6 +388,7 @@
 		B5A4822E20AC6C1A009D95F6 /* WPKitLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A4822C20AC6C19009D95F6 /* WPKitLogging.m */; };
 		B5A4822F20AC6C1A009D95F6 /* WPKitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A4822D20AC6C1A009D95F6 /* WPKitLogging.h */; };
 		D819C09120ED252500CF4AD0 /* ContentActionUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D819C09020ED252500CF4AD0 /* ContentActionUIComponent.swift */; };
+		D819C09820EE0B9D00CF4AD0 /* RewindActivityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D819C09720EE0B9D00CF4AD0 /* RewindActivityAction.swift */; };
 		E11C2AD21FA77FB90023BDE2 /* SitePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C2AD11FA77FB90023BDE2 /* SitePlugin.swift */; };
 		E13EE1471F33258E00C15787 /* PluginServiceRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13EE1461F33258E00C15787 /* PluginServiceRemote.swift */; };
 		E13EE1491F332B8500C15787 /* site-plugins-success.json in Resources */ = {isa = PBXBuildFile; fileRef = E13EE1481F332B8500C15787 /* site-plugins-success.json */; };
@@ -827,6 +828,7 @@
 		C5953994B3865AF409BA4210 /* Pods-WordPressKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPressKitTests/Pods-WordPressKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA5ABD95F40077D001644BCC /* Pods-WordPressKit.release-internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressKit.release-internal.xcconfig"; path = "Pods/Target Support Files/Pods-WordPressKit/Pods-WordPressKit.release-internal.xcconfig"; sourceTree = "<group>"; };
 		D819C09020ED252500CF4AD0 /* ContentActionUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionUIComponent.swift; sourceTree = "<group>"; };
+		D819C09720EE0B9D00CF4AD0 /* RewindActivityAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewindActivityAction.swift; sourceTree = "<group>"; };
 		E11C2AD11FA77FB90023BDE2 /* SitePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitePlugin.swift; sourceTree = "<group>"; };
 		E13EE1461F33258E00C15787 /* PluginServiceRemote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginServiceRemote.swift; sourceTree = "<group>"; };
 		E13EE1481F332B8500C15787 /* site-plugins-success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "site-plugins-success.json"; sourceTree = "<group>"; };
@@ -1012,6 +1014,7 @@
 				7EFF208020EAC5E0009C4699 /* FormattableTextContent.swift */,
 				7EFF208220EAC8E0009C4699 /* FormattableContentFactory.swift */,
 				D819C09020ED252500CF4AD0 /* ContentActionUIComponent.swift */,
+				D819C09720EE0B9D00CF4AD0 /* RewindActivityAction.swift */,
 			);
 			name = FormattableContent;
 			sourceTree = "<group>";
@@ -2091,6 +2094,7 @@
 				7403A2E41EF06ED500DED7DC /* AccountSettingsRemote.swift in Sources */,
 				7E3E7A4F20E446600075D159 /* FormattableContentParent.swift in Sources */,
 				93C674E81EE8345300BFAF05 /* RemoteBlog.m in Sources */,
+				D819C09820EE0B9D00CF4AD0 /* RewindActivityAction.swift in Sources */,
 				7E3ADCD320E1505E0008400A /* FormattableContentRange.swift in Sources */,
 				93BD27831EE73944002BB00B /* WordPressRSDParser.swift in Sources */,
 				826016F31F9FA17B00533B6C /* Activity.swift in Sources */,
