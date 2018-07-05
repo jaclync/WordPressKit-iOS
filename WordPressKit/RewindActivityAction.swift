@@ -17,8 +17,11 @@ final class RewindActivityAction: FormattableContentAction {
         return nil
     }
 
-    init(rewindID: String) {
-        self.rewindID = rewindID
+    init?(rewindID: String?) {
+        guard let id = rewindID else {
+            return nil
+        }
+        self.rewindID = id
     }
 
     func execute(context: ActionContext) {
