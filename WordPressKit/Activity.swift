@@ -69,6 +69,7 @@ public class Activity {
     public let target: ActivityObject?
     public let items: [ActivityObject]?
     public let content: AnyObject?
+    public let action: FormattableContentAction?
 
     let formatter = FormattableContentFormatter()
     var cachedContentGroup: FormattableContentGroup? = nil
@@ -103,6 +104,7 @@ public class Activity {
         status = dictionary["status"] as? String ?? ""
         rewindable = dictionary["is_rewindable"] as? Bool ?? false
         rewindID = dictionary["rewind_id"] as? String
+        action = RewindActivityAction(rewindID: rewindID)
         if let actorData = dictionary["actor"] as? [String: AnyObject] {
             actor = ActivityActor(dictionary: actorData)
         } else {
