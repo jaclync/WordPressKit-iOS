@@ -17,6 +17,12 @@ public struct DomainSuggestion: Codable {
     }
 }
 
+public extension DomainSuggestion {
+    var subdomain: String {
+        return domainName.components(separatedBy: ".").first ?? ""
+    }
+}
+
 public class DomainsServiceRemote: ServiceRemoteWordPressComREST {
     public enum ResponseError: Error {
         case decodingFailed
