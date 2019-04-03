@@ -337,7 +337,7 @@ open class WordPressComRestApi: NSObject {
     ///
     func buildRequestURLFor(path: String, parameters: [String: AnyObject]? = [:]) -> String? {
 
-        let baseURL = URL(string: WordPressComRestApi.apiBaseURLString)
+        let baseURL = buildBaseURL()
 
         guard let requestURLString = URL(string: path, relativeTo: baseURL)?.absoluteString,
             let urlComponents = URLComponents(string: requestURLString) else {
@@ -348,6 +348,10 @@ open class WordPressComRestApi: NSObject {
         let urlComponentsWithLocale = applyLocaleIfNeeded(urlComponents: urlComponents, parameters: parameters, localeKey: localeKey)
 
         return urlComponentsWithLocale?.url?.absoluteString
+    }
+
+    open func buildBaseURL() -> URL? {
+        return URL(string: WordPressComRestApi.apiBaseURLString)
     }
 
     private func applyLocaleIfNeeded(urlComponents: URLComponents, parameters: [String: AnyObject]? = [:], localeKey: String) -> URLComponents? {
